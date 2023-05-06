@@ -20,6 +20,8 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- Icons
+    use('nvim-tree/nvim-web-devicons')
 
     -- telescope
     use {
