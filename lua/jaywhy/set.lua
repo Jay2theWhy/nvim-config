@@ -1,8 +1,11 @@
+-- thin cursor
 vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 
+-- line numbers and relative line numbers
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+-- tab settings
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -17,6 +20,7 @@ vim.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim.undodir"
 vim.opt.undofile = true
 
+-- highlighting with "/"
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
