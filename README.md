@@ -8,3 +8,5 @@
 - Telescope
 - Undotree
 - vim-fugitive
+- gitsigns
+- neotest
