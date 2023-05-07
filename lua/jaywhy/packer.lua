@@ -47,6 +47,17 @@ return require('packer').startup(function(use)
             require('gitsigns').setup()
         end
     }
+
+    -- Neotest
+    use {
+        "nvim-neotest/neotest",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "nvim-treesitter/nvim-treesitter",
+            "antoinemadec/FixCursorHold.nvim"
+        }
+    }
+
     -- Icons
     use('nvim-tree/nvim-web-devicons')
 
