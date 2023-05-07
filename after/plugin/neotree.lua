@@ -5,9 +5,9 @@ end
 
 
 neo_tree.setup ({
+    close_if_last_window = true,
     popup_border_style = "single",
     add_blank_line_at_top = false,
-    close_if_last_window = true,
     default_component_configs = {
         container = {
             enable_character_fade = false,

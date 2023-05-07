@@ -5,12 +5,12 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
+    use('wbthomason/packer.nvim')
  
     -- File Explorer
     vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
-    use {
+    use({
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
         requires = { 
@@ -18,16 +18,16 @@ return require('packer').startup(function(use)
             "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
             "MunifTanjim/nui.nvim",
         }
-    }
+    })
 
     -- Icons
     use('nvim-tree/nvim-web-devicons')
 
     -- telescope
-    use {
+    use({
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         requires = { {'nvim-lua/plenary.nvim'} }
-    }
+    })
 
     -- Colour Theme
     use({ 'rose-pine/neovim', 
