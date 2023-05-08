@@ -17,4 +17,10 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	["<C-Space>"] = cmp.mapping.complete(),
 })
 
+lsp.format_on_save({
+    servers = {
+        ['lua_ls'] = {'lua'},
+    }
+})
+
 lsp.setup()
