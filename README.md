@@ -10,3 +10,9 @@
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [neotest](https://github.com/nvim-neotest/neotest)
+
+## Set up instructions:
+1. Make sure that lua is installed
+2. Begin by installing packer
+3. Run `:PackerSync` in nvim
+4. If you are having issues with telescope, debug using `:checkhealth telescope`
